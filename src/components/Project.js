@@ -48,6 +48,13 @@ export default class Project extends React.Component {
                 case 'react':
                     results.push(
                         <a key={element} href="https://en.wikipedia.org/wiki/React_(web_framework)" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-react" style={{color: '#05dfd7'}}></i>
+                        </a>
+                    )
+                    break
+                case 'react-native':
+                    results.push(
+                        <a key={element} href="https://en.wikipedia.org/wiki/React_Native" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-react" style={{color: '#3354cd'}}></i>
                         </a>
                     )
@@ -61,7 +68,11 @@ export default class Project extends React.Component {
     render() {
         return (
             <div className="project-item">
-                <img className="project-img" src={this.props.img ? require("../img/" + this.props.img) : require("../img/logo512.png")} alt="" />
+                <img
+                    className="project-img"
+                    src={this.props.img ? require("../img/" + this.props.img) : require("../img/logo512.png")}
+                    alt={"Image of " + this.props.name + " project"}
+                />
                 <h3 className="project-header">{this.props.name}</h3>
                 <p className="project-desc">{this.props.description}</p>
                 <div className="project-technologies">

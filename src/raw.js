@@ -7,7 +7,7 @@ const PROJECTS = [
         source: "https://github.com/OmarIbrahim991/MovieBrowser.git",
         description: "A React-Native app to search for movies using OMDB API.(After clicking Run, choose between Android or iOS.)",
         img: "moviebrowser.jpg",
-        techs: ['html', 'css', 'js', 'npm', 'react']
+        techs: ['js', 'npm', 'react-native']
     },
     {
         name: "random quote machine",
@@ -16,7 +16,10 @@ const PROJECTS = [
         description: "A React-JS app that shows random quotes.",
         img: "randomquote.jpg",
         techs: ['html', 'css', 'sass', 'js', 'npm', 'react']
-    },{name:"in progress"}
+    },
+    {
+        name:"(in progress)"
+    },
 ]
 
 export default PROJECTS
