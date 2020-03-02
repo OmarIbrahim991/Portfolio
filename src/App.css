@@ -62,13 +62,14 @@ a:focus {
   text-transform: capitalize;
   display: block;
   margin-left: 0.3em;
-  margin-top: 0.25em;
+  margin-top: 0.7em;
+  margin-bottom: 0.25em;
 }
 
 .section-header::after {
   content: "";
   height: 0.25rem;
-  margin: 0.2em 0;
+  margin: 0.1em 0 0.4em;
   display: block;
   background-color: var(--clr-dark);
 }
@@ -77,24 +78,28 @@ a:focus {
   width: calc(9ch + 0.25em);
 }
 
-
 #about-me::after {
   width: calc(7ch + 0.5em);
 }
+
 @media (max-width: 900px) {
   .section-header, .section-header::after {
     text-align: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-header {
+    margin-top: 0.8em;
   }
 }
 
-.projects, .about{
+.projects, .about {
   display: grid;
   gap: 0.5em;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   padding: 0 1em;
   text-align: center;
-  margin: 1em 0;
 }
 
 .project-item {
@@ -191,7 +196,7 @@ a:focus {
   color: var(--clr-dark);
   text-align: center;
   align-self: start;
-  margin: 0.5em;
+  margin: 0.2em 0.5em 0.8em;
 }
 
 .about-desc::before {
